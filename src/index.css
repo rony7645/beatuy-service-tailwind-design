@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* font import  */
+@font-face {
+  font-family: lora;
+  src: url("/public/fonts/Lora-SemiBold.ttf");
+}
+@font-face {
+  font-family: lovelace;
+  src: url("/public/fonts/Lovelace.ttf");
+}
+
+/* theme config or root style  */
+
+@theme {
+  /* default color  */
+  --color-*: initial;
+  --color-primary: #da3b85;
+  --color-heading: #373b4d;
+  --color-text: #6c757d;
+  --color-accent: #da3b85;
+  --color-hover: #da3b85;
+  --color-dark: #000000;
+  --color-light: #ffffff;
+
+  /* typography  */
+  --font-primary:lora, sans-serif;
+  --font-secondary:lovelace, sans-serif;
+}
+/* base layer  */
+body {
+  font-family: lovelace, sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-primary font-semibold text-heading
+}
+
+/* components layer  */
+.container-layout {
+  @apply container mx-auto px-3 max-w-screen-xl;
+}
+h2 {
+  @apply lg:text-7xl lg:leading-[70px];
+}
+p {
+  @apply text-lg text-text;
+}
