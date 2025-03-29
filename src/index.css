@@ -17,15 +17,16 @@
   --color-*: initial;
   --color-primary: #da3b85;
   --color-heading: #373b4d;
-  --color-text: #6c757d;
+  --color-text: #26292c;
   --color-accent: #da3b85;
   --color-hover: #da3b85;
   --color-dark: #000000;
   --color-light: #ffffff;
+  --color-grey: #f8f8f8;
 
   /* typography  */
-  --font-primary:lora, sans-serif;
-  --font-secondary:lovelace, sans-serif;
+  --font-primary: lora, sans-serif;
+  --font-secondary: lovelace, sans-serif;
 }
 /* base layer  */
 body {
@@ -39,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-primary font-semibold text-heading
+  @apply font-primary font-semibold text-heading;
 }
 
 /* components layer  */
@@ -47,8 +48,11 @@ h6 {
   @apply container mx-auto px-3 max-w-screen-xl;
 }
 h2 {
-  @apply lg:text-7xl lg:leading-[70px];
+  @apply lg:text-5xl lg:leading-[57px];
 }
 p {
   @apply text-lg text-text;
+}
+.spacing {
+  @apply py-[40px] md:py-[60px] lg:py-[100px];
 }
